@@ -1,0 +1,822 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+::selection {
+    background: #2b3dda;
+    color: #fff;
+    text-shadow: none;
+}
+
+html {
+    font-size: 62.5%;
+    /* font-family: 'Playfair Display SC', serif; */
+    background-color: #fbf9fe;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    width: 100%;
+    height: 8rem;
+    background-color: #fbf9fe;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 99;
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    background-color: white !important;
+    animation: 0.95s ease 0s normal forwards 1 running slideDown;
+}
+
+#logo-box {
+    display: flex;
+    text-align: center;
+}
+
+#logo {
+    height: 8rem;
+    width: 8rem;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+#nav-links li {
+    list-style: none;
+    font-size: 1.8rem;
+    padding: 1rem 0rem;
+    margin: 0 1rem;
+}
+
+#nav-links li a {
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+#nav-links li a i {
+    padding-right: 1rem;
+    transition: none !important;
+}
+
+
+.nav-link {
+    background-color: inherit;
+}
+
+.nav-link:hover {
+    background-color: #00c1b2;
+}
+
+#nav-links li a:hover {
+    color: white;
+}
+
+#intro-section {
+    height: 1500px;
+}
+
+
+
+#intro-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* #intro-section::before {
+    content: "";
+    background: url("https://source.unsplash.com/random/?cake,cakes")no-repeat center center/cover;
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    z-index: -10;
+    opacity: 0.7;
+} */
+
+#quote-box {
+    width: 45%;
+    height: 48rem;
+}
+
+.quote {
+    color: #972222;
+    font-size: 6rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 10px #caa6a6;
+    margin-top: 7rem;
+}
+
+#quote-box>span {
+    font-size: 10rem;
+    font-family: 'Dancing Script', cursive;
+    color: #ff0054;
+    text-shadow: 5px 5px 10px #b97878;
+    display: block;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.8rem;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    color: #217171;
+}
+
+#intro-img-box {
+    width: 30%;
+    height: 30rem;
+}
+
+#intro-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.order-link {
+    display: block;
+    padding: 14px 0px;
+    width: 16.5rem;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    height: 5rem;
+    margin: 20px auto;
+    background-color: #916bdb;
+    color: white;
+    box-shadow: 5px 5px 12px -1px #a18ace;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.order-link i {
+    padding-left: 1rem;
+}
+
+.order-link:hover {
+    background-color: #6e46bb;
+}
+
+.order-link:hover i {
+    transform: translateX(5px)
+}
+
+
+
+
+/* about section styling begins here */
+
+
+#About {
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+}
+
+#about-container {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(176deg, rgba(213, 123, 221, 0.678) 28%, rgba(221, 106, 204, 0.664) 44%, rgba(241, 61, 160, 0.5) 100%);
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 5rem 0;
+}
+
+.about-img {
+    width: 40rem;
+    height: 60rem;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.about-content {
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80rem;
+    background: linear-gradient(353deg, rgba(234, 150, 150, 0.651) 8%, rgba(209, 75, 224, 0.521) 56%, rgba(236, 127, 230, 0.582) 100%);
+    padding: 2rem;
+    border-radius: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about-heading {
+    font-size: 28px;
+    color: white;
+    margin: 5rem 0 3rem 0;
+}
+
+.about-heading span {
+    color: yellow;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.about-text span {
+    color: yellow;
+}
+
+/* about section styling ends here */
+
+/* special section styling begins here */
+
+#special {
+    width: 100%;
+    height: 100%;
+}
+
+#special-container {
+    width: 100%;
+    margin: 10rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.special-card {
+    display: flex;
+}
+
+.special-img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.special-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.special-caption {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    color: #3e3737;
+    padding: 1rem;
+}
+
+/* special section styling ends here */
+
+
+/* referral section styling begins here */
+
+#referral {
+    width: 100%;
+    height: 25rem;
+    background: linear-gradient(176deg, rgba(213, 123, 221, 0.678) 28%, rgba(221, 106, 204, 0.664) 44%, rgba(241, 61, 160, 0.5) 100%);
+    position: relative;
+}
+
+#referral img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rfl-contnent {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.rfl-contnent>h3,
+h2 {
+    color: white;
+    padding: 1rem;
+    text-shadow: 3px 3px 5px #847d7d;
+}
+
+.rfl-contnent h2>span {
+    color: #ff0054;
+    text-shadow: none;
+}
+
+/* referral section styling ends here */
+
+
+/* category section styling begins here */
+
+
+/* category main begins here */
+.category-container {
+    width: 100%;
+    height: 100%;
+}
+
+#category-box-main {
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    border: 1px solid #fbf9fe;
+}
+
+.card-container-main,
+.card-container-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading-box-main {
+    margin: 5rem 0rem;
+}
+
+.heading {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 3.5rem;
+}
+
+.heading>span {
+    color: #0e9388;
+}
+
+.card-main {
+    height: 30rem;
+    width: 35%;
+    position: relative;
+    margin: 6rem 0;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.card-main img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-main:hover img {
+    transform: scale(1.3);
+}
+
+.card-main-content {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.heading-box {
+    margin: 5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    font-size: 4rem;
+}
+
+.main-category-btn {
+    width: 8rem;
+    height: 3.5rem;
+    margin: 0 auto;
+    display: none;
+}
+
+.view-all-btn {
+    display: block;
+    padding: 1rem 0px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    background-color: #916bdb;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-main:hover .main-category-btn {
+    display: block;
+}
+
+/* category main ends here */
+
+
+/* category child section styling begins here */
+
+#category-box-child {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fbf9fe;
+}
+
+.card-container-child {
+    margin: 5rem 0;
+}
+
+.card-child {
+    width: 25rem;
+    height: 30rem;
+    background-color: #d0258db2;
+    border-radius: 0px 0px 1.5rem 1.5rem;
+    overflow: hidden;
+}
+
+.card-child-img {
+    height: 25rem;
+}
+
+.card-child-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-child-content {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1rem 0;
+}
+
+.category-btn {
+    z-index: 1;
+    width: 11rem;
+    height: 4.5rem;
+}
+
+.view-all-link {
+    display: block;
+    padding: 1.2rem 0px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    background-color: #916bdb;
+    color: white;
+    box-shadow: 4px 4px 11px -1px #a18ace;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.view-all-link:hover {
+    background-color: #7441d9;
+}
+
+.trending-icon {
+    width: 13rem;
+    height: 13rem;
+    font-size: 3rem;
+    position: absolute;
+    top: -7.5rem;
+    left: -7.5rem;
+    background-color: #dc64ae;
+    padding: 1rem;
+    transform: rotate(45deg);
+}
+
+.trending-icon i {
+    position: relative;
+    top: 35%;
+    left: 77%;
+    transform: rotate(-45deg) !important;
+}
+
+.bg-1 {
+    background-color: #8f71cb54;
+}
+
+/* category child section styling ends here */
+
+
+
+/* news letter styling begins here */
+
+#news-letter-container {
+    width: 100%;
+    height: 25rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nl-content {
+    width: 65rem;
+    padding-top: 5rem;
+}
+
+.nl-heading-box {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+}
+
+
+.heading-3 {
+    font-size: 2.5rem;
+}
+
+.heading-3>span {
+    color: #ff0054;
+}
+
+
+.nl-form-box {
+    margin-top: 3rem;
+}
+
+.nl-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nl-form input {
+    width: 60%;
+    height: 3.5rem;
+    outline: none;
+    padding: 0 0 0 10px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    margin-right: 2rem;
+}
+
+.subscribe-btn {
+    border-radius: 8px;
+    font-size: 1.6rem;
+    background-color: #00c1b2;
+    color: white;
+    box-shadow: 4px 4px 7px -3px #3d4242;
+    font-family: 'Ubuntu', sans-serif;
+    width: 12rem;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    /* background-color: #7441d9; */
+    box-shadow: none;
+}
+
+.nl-img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.nl-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nl-form input:focus {
+    padding-left: 2rem;
+    border: 2px solid #00c1b2;
+}
+
+
+
+
+/* client-review section styling begins here */
+#clients-reviews {
+    width: 100%;
+    height: 100%;
+    margin: 10rem 0;
+}
+
+.reviews-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.review-card {
+    width: 40rem;
+    height: 30rem;
+    border: 2px solid;
+    padding: 2rem;
+    background-color: #916bdb;
+    color: white;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.client-info-box {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.client-img {
+    width: 7rem;
+    height: 7rem;
+    margin: 0px 1rem;
+}
+
+.client-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4rem;
+}
+
+.client-name {
+    font-size: 1.7rem;
+}
+
+.client-relation {
+    font-size: 1.3rem;
+}
+
+.review {
+    font-size: 1.5rem;
+}
+
+.review p i {
+    font-size: 4rem;
+}
+
+/* review section styling ends here */
+
+
+
+
+
+
+
+/* footer section starts */
+.footer {
+    min-height: auto;
+    padding-top: 5rem;
+    background-color: #d967ab2b;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer .footer-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .footer-box .box {
+    flex: 1 1 25rem;
+    margin: 2.5rem;
+}
+
+.footer .footer-box .box h3 {
+    font-size: 2.5rem;
+    color: #130f40;
+    padding-bottom: 1rem;
+    font-weight: normal;
+}
+
+.footer .footer-box .box p,
+.box h1 {
+    font-size: 1.5rem;
+    color: #494262;
+    padding: 0.7rem 0;
+    text-transform: none;
+}
+
+
+.footer .footer-box .box a {
+    font-size: 1.5rem;
+    color: #494262;
+    padding: 0.3rem 0;
+    display: block;
+    cursor: pointer;
+    width: max-content;
+}
+
+.footer .footer-box .box a i {
+    padding-right: 1rem;
+}
+
+.footer .footer-box .box a:hover {
+    color: #0a9185;
+}
+
+.footer .footer-box .box a:hover i {
+    padding-right: 2.5rem;
+}
+
+.footer .footer-box .box .share {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.footer .footer-box .box .share a {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    transition: 0.2s;
+    background: white;
+    color: #02094b;
+    border: none;
+}
+
+.footer .footer-box .box .share a:hover {
+    background: transparent;
+    transform: scale(0.98);
+    border: 0.1rem solid rgb(180, 178, 178);
+}
+
+.footer .footer-box .box .share .yt:hover {
+    color: red;
+}
+
+.footer .footer-box .box .share .fb:hover {
+    color: rgb(54, 98, 156);
+}
+
+.footer .footer-box .box .share .mail:hover {
+    color: rgb(6, 133, 74);
+}
+
+.footer .footer-box .box .share .tw:hover {
+    color: rgb(2, 210, 238);
+}
+
+.footer .footer-box .box .share .ig:hover {
+    color: rgb(228, 0, 197);
+}
+
+.footer .credit {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #130f40;
+}
+
+.footer .credit a {
+    color: #ff0101d1;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes slideDown {
+    0% {
+        margin-top: -90px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
