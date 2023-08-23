@@ -629,9 +629,10 @@ html {
 
 .order-tagline {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #f032a7;
     margin-top: 5rem;
+    font-family: 'Dancing Script', cursive;
 }
 
 #order-main {
