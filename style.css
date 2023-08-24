@@ -618,10 +618,10 @@ html {
 
 /* menu section styling begins here */
 
-#menu {
+#Menu {
     width: 100%;
     height: 100%;
-    font-size: 15px;
+    padding-top: 10rem;
     font-family: "Poppins", sans-serif;
 }
 
