@@ -9,6 +9,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Ubuntu&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Poppins&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fdd7d4c2a1.js" crossorigin="anonymous"></script>
 </head>
@@ -25,11 +26,16 @@
                 </div>
             </div>
             <ul id="nav-links">
-                <li><a class="nav-link" href="#Home"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a class="nav-link" href="#About"><i class="fa-solid fa-address-card"></i>About</a></li>
-                <li><a class="nav-link" href="#Popular"><i class="fa-solid fa-fire"></i>Popular</a></li>
-                <li><a class="nav-link" href="#Menu"><i class="fa-solid fa-list"></i>Menu</a></li>
-                <li><a class="nav-link" href="#Order"><i class="fa-solid fa-cart-shopping"></i>Order</a></li>
+                <li><a onclick="clickSingleA(this)" class="nav-link active" href="#Home"><i
+                            class="fa-solid fa-house"></i>Home</a></li>
+                <li><a onclick="clickSingleA(this)" class="nav-link" href="#About"><i
+                            class="fa-solid fa-address-card"></i>About</a></li>
+                <li><a onclick="clickSingleA(this)" class="nav-link" href="#Popular"><i
+                            class="fa-solid fa-fire"></i>Popular</a></li>
+                <li><a onclick="clickSingleA(this)" class="nav-link" href="#Menu"><i
+                            class="fa-solid fa-list"></i>Menu</a></li>
+                <li><a onclick="clickSingleA(this)" class="nav-link" href="#Order"><i
+                            class="fa-solid fa-cart-shopping"></i>Order</a></li>
             </ul>
 
         </nav>
