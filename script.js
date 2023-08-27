@@ -47,13 +47,19 @@ function clickSingleA(a) {
 
 // js to Highlight active section in navbar
 $(document).ready(function () {
+    var scrollTimeout;
+
     $(window).scroll(function () {
-        $('section').each(function () {
-            if ($(window).scrollTop() >= $(this).offset().top - 300) {
-                var id = $(this).attr('id');
-                $('nav li a').removeClass('active');
-                $('nav').find('a[href="#' + id + '"]').addClass('active');
-            }
-        });
+        clearTimeout(scrollTimeout); // Clear any previous timeouts
+        scrollTimeout = setTimeout(function () {
+            $('section').each(function () {
+                if ($(window).scrollTop() >= $(this).offset().top - 300) {
+                    var id = $(this).attr('id');
+                    $('nav li a').removeClass('active');
+                    $('nav').find('a[href="#' + id + '"]').addClass('active');
+                }
+            });
+        }, 50);
     });
 });
+
