@@ -717,6 +717,7 @@ html {
     height: 100%;
     margin-top: 5rem;
     display: flex;
+    gap: 3rem;
     justify-content: space-between;
 }
 
@@ -750,11 +751,13 @@ html {
 }
 
 
+
 .input-group {
     margin-bottom: 1.2rem;
     width: 100%;
     position: relative;
     display: flex;
+    gap: 3rem;
     flex-direction: row;
     padding: 1rem 0;
 }
@@ -828,8 +831,7 @@ textarea {
 }
 
 .summ {
-    width: 59rem;
-    max-width: 50%;
+    max-width: 48%;
 }
 
 .summ label {
