@@ -388,8 +388,9 @@ html {
 .view-all-btn {
     display: block;
     padding: 1rem 0px;
+    margin-top: 1rem;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     font-size: 1.3rem;
     background-color: #916bdb;
     color: white;
@@ -493,7 +494,7 @@ html {
 
 #news-letter-container {
     width: 100%;
-    height: 25rem;
+    height: 100%;
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
@@ -536,7 +537,7 @@ html {
     height: 3.5rem;
     outline: none;
     padding: 0 0 0 10px;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
     border-radius: 5px;
     border: 1px solid rgb(51, 51, 51);

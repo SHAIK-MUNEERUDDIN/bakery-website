@@ -26,9 +26,18 @@
         gap: 2rem;
     }
 
+    #news-letter-container {
+        justify-content: center;
+    }
+
+    .nl-content {
+        padding: 5rem 1rem;
+    }
+
     .nl-img {
         display: none;
     }
+
 
     #order-main {
         flex-wrap: wrap;
@@ -93,8 +102,24 @@
         padding: 5rem 1rem;
     }
 
+    .heading {
+        font-size: 3rem;
+    }
+
     .heading-2 {
         font-size: 3.5rem;
+    }
+
+    .card-main-content {
+        left: 10%;
+    }
+
+    .main-category-btn {
+        width: 10rem;
+    }
+
+    .view-all-btn {
+        font-size: 1.5rem;
     }
 
 
@@ -103,7 +128,7 @@
     }
 
     #Order {
-        padding: 10rem 2rem 2rem;
+        padding: 10rem 1.5rem 1.5rem;
     }
 
 }
