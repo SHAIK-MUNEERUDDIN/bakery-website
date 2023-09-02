@@ -120,6 +120,7 @@ html {
 #quote-box {
     width: 45rem;
     height: 48rem;
+    letter-spacing: 1px;
 }
 
 .quote {
@@ -233,7 +234,7 @@ html {
 }
 
 .about-heading {
-    font-size: 28px;
+    font-size: 2.8rem;
     color: white;
     margin: 5rem 0 3rem 0;
 }
@@ -245,7 +246,7 @@ html {
 }
 
 .about-text {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.6;
     color: white;
     margin-bottom: 40px;
@@ -803,8 +804,8 @@ html {
 }
 
 .input-group i {
-    height: 36px;
-    width: 34px;
+    height: 3.6rem;
+    width: 3.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
