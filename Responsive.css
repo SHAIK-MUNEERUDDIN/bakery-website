@@ -19,7 +19,107 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+
+    #nav-links {
+        display: none;
+    }
+
+
+
+    /* hamburger menu icon styling begins here */
+
+    /* Styles for the menu icon */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        top: 1rem;
+        right: 3rem;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    /* Styles for the circular icon */
+    .menu-btn .icon-circle {
+        transition-duration: 0.5s;
+        position: absolute;
+        height: 5.5rem;
+        width: 5.5rem;
+        top: 0;
+        border-radius: 100%;
+        background: transparent;
+        border: 4px solid black;
+    }
+
+    /* Hover effect for the circular icon */
+    .menu-btn .icon-circle:hover {
+        background: #fff;
+    }
+
+    /* Styles for the additional icon inside the circular icon */
+    .menu-btn .icon {
+        transition-duration: 0.5s;
+        position: absolute;
+        height: 4px;
+        width: 3rem;
+        background-color: #212121;
+        border-radius: 4px;
+        top: 2.6rem;
+        left: 1.2rem;
+    }
+
+    /* Styles for the top bar of the additional icon */
+    .menu-btn .icon:before {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 3rem;
+        height: 4px;
+        background-color: #212121;
+        border-radius: 4px;
+        content: "";
+        top: -1rem;
+    }
+
+    /* Styles for the bottom bar of the additional icon */
+    .menu-btn .icon:after {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 3rem;
+        height: 4px;
+        background-color: #212121;
+        border-radius: 4px;
+        content: "";
+        top: 1rem;
+    }
+
+    /* Styles for the open state of the menu icon */
+    .menu-btn.open .icon {
+        transition-duration: 0.5s;
+        background: transparent;
+    }
+
+    .menu-btn.open .icon:before {
+        transform: rotateZ(-45deg) scaleX(1.25) translate(-0.6rem, 0.6rem);
+    }
+
+    .menu-btn.open .icon:after {
+        transform: rotateZ(45deg) scaleX(1.25) translate(-0.6rem, -0.6rem);
+    }
+
+    /* Hover effect for the menu icon */
+    .menu-btn:hover {
+        cursor: pointer;
+    }
+
+    .menu-btn.open~#nav-links {
+        display: block;
+    }
+
+    /* hamburger menu icon styling ends here */
+
+
 
     .menu-container {
         padding: 3rem;
@@ -73,7 +173,7 @@
 
 @media only screen and (max-width: 600px) {
     html {
-        font-size: 50%;
+        font-size: 56.25%;
     }
 
 

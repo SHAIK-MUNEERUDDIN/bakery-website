@@ -42,6 +42,7 @@ html {
 #logo-box {
     display: flex;
     text-align: center;
+    position: relative;
 }
 
 #logo {
@@ -60,6 +61,16 @@ html {
     align-items: center;
     font-size: 2.5rem;
 }
+
+.menu-btn {
+    display: none;
+}
+
+.blur {
+    transition: filter 0.3s;
+    filter: blur(5px);
+}
+
 
 #nav-links {
     display: flex;
