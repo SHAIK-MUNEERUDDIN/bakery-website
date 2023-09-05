@@ -63,3 +63,30 @@ $(document).ready(function () {
     });
 });
 
+
+
+// js to toggle hamburger menu, add blur effect to the page and to disable scroll when menu is opened
+const menu = document.querySelector('.menu-btn');
+const page = document.getElementById('page-container');
+
+function disableScroll() {
+    document.body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+    document.body.style.overflow = '';
+}
+
+// Add a click event listener to toggle the "open" class
+menu.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    if (menu.classList.contains('open')) {
+        page.classList.add('blur');
+        disableScroll();
+    } else {
+        page.classList.remove('blur');
+        enableScroll();
+    }
+});
+
+
