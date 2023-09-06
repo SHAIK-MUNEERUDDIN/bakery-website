@@ -1,4 +1,17 @@
 @media only screen and (max-width: 1023px) {
+
+    #nav-bar {
+        justify-content: space-between;
+    }
+
+    #nav-links li {
+        margin-left: 0;
+    }
+
+    #nav-links li a {
+        padding: 1rem 1rem;
+    }
+
     #about-container {
         flex-wrap: wrap;
     }
@@ -19,11 +32,18 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-
-    #navbar {
-        justify-content: flex-start;
+@media only screen and (max-width: 868px) {
+    .logo-text {
+        font-size: 2rem;
     }
+
+    #nav-links li {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
 
     #logo-box {
         margin-left: 1rem;
@@ -31,6 +51,7 @@
 
     #nav-links {
         display: none;
+        width: 50rem;
     }
 
     #nav-links li a {
@@ -40,6 +61,11 @@
         width: 20rem;
         display: block;
         text-align: center;
+    }
+
+    .blur {
+        transition: filter 0.3s;
+        filter: blur(5px);
     }
 
 
@@ -130,10 +156,8 @@
         cursor: pointer;
     }
 
-    .menu-btn.open~#nav-links {
-        display: flex;
+    .resp-nav {
         flex-direction: column;
-        width: 50rem;
         background-color: white;
         z-index: 10;
         position: absolute;
@@ -144,6 +168,10 @@
 
     /* hamburger menu icon styling ends here */
 
+
+    #Home {
+        margin-top: 12rem;
+    }
 
 
     .menu-container {
@@ -201,6 +229,10 @@
         font-size: 56.25%;
     }
 
+    .menu-container {
+        justify-content: center;
+    }
+
 
 }
 
@@ -217,6 +249,8 @@
     .intro-text {
         font-size: 2rem;
         margin-top: 1rem;
+        font-weight: 600;
+        margin: 0.5rem;
     }
 
     .about-img {
@@ -243,17 +277,75 @@
         width: 10rem;
     }
 
+    .card-child {
+        width: 28rem;
+        height: 33rem;
+    }
+
+    .card-child-img {
+        height: 27rem;
+    }
+
+    .trending-icon {
+        top: -6.5rem;
+        left: -6.5rem;
+    }
+
     .view-all-btn {
         font-size: 1.5rem;
     }
 
+    #category-box-child {
+        position: relative;
+        padding-bottom: 4rem;
+    }
+
+    .heading-box {
+        justify-content: center;
+    }
+
+    .category-btn {
+        position: absolute;
+        top: 96%;
+        left: 40%;
+    }
 
     .menu-container {
         justify-content: center;
+    }
+
+    .menu-card {
+        width: 29rem;
+        height: 35rem;
+    }
+
+    .menu-content-box {
+        margin-top: 3.5rem;
     }
 
     #Order {
         padding: 10rem 1.5rem 1.5rem;
     }
 
+    .review-card {
+        height: 34rem;
+        margin: 1rem;
+    }
+
+    .footer .credit a {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .category-btn {
+        position: absolute;
+        top: 96%;
+        left: 37%;
+    }
+
+    .card-child-content {
+        font-size: 1.8rem;
+    }
 }
