@@ -368,8 +368,11 @@ html {
 
 .card-main-content {
     position: absolute;
-    top: 40%;
-    left: 15%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    height: 10rem;
 }
 
 .heading-box {
@@ -523,6 +526,10 @@ html {
     font-size: 2.5rem;
 }
 
+.nl-heading-box>p {
+    margin-top: 1rem;
+}
+
 .heading-3>span {
     color: #ff0054;
 }
@@ -636,7 +643,7 @@ html {
 
 .item-name {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
 
 .item-info {
@@ -683,6 +690,7 @@ html {
     width: 100%;
     height: 100%;
     font-size: 2rem;
+    letter-spacing: 1px;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
 }
@@ -691,7 +699,7 @@ html {
 .rfl-contnent>h2 {
     color: white;
     padding: 1rem;
-    text-shadow: 0.5rem 0.5rem 1rem #b97878;
+    text-shadow: 0.5rem 0.5rem 1.5rem #997272;
 }
 
 .rfl-contnent h2>span {

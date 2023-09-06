@@ -161,7 +161,9 @@
         background-color: white;
         z-index: 10;
         position: absolute;
-        top: 15rem;
+        top: 30rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
         padding: 5rem;
         border-radius: 1.2rem;
     }
@@ -233,10 +235,21 @@
         justify-content: center;
     }
 
+    .order-card {
+        font-size: 1.7rem;
+    }
 
 }
 
 @media only screen and (max-width: 480px) {
+
+    #navbar {
+        justify-content: flex-start;
+    }
+
+    #nav-links {
+        width: 40rem;
+    }
 
     .quote {
         font-size: 4rem;
@@ -250,7 +263,7 @@
         font-size: 2rem;
         margin-top: 1rem;
         font-weight: 600;
-        margin: 0.5rem;
+        margin: 1rem 0.5rem;
     }
 
     .about-img {
@@ -267,10 +280,6 @@
 
     .heading-2 {
         font-size: 3.5rem;
-    }
-
-    .card-main-content {
-        left: 10%;
     }
 
     .main-category-btn {
@@ -306,8 +315,9 @@
 
     .category-btn {
         position: absolute;
-        top: 96%;
-        left: 40%;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .menu-container {
@@ -339,13 +349,18 @@
 
 @media only screen and (max-width: 400px) {
 
-    .category-btn {
-        position: absolute;
-        top: 96%;
-        left: 37%;
+    .heading-2 {
+        font-size: 3rem;
     }
+
 
     .card-child-content {
         font-size: 1.8rem;
     }
 }
+
+
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
