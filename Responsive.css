@@ -21,8 +21,25 @@
 
 @media only screen and (max-width: 768px) {
 
+    #navbar {
+        justify-content: flex-start;
+    }
+
+    #logo-box {
+        margin-left: 1rem;
+    }
+
     #nav-links {
         display: none;
+    }
+
+    #nav-links li a {
+        color: black;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        width: 20rem;
+        display: block;
+        text-align: center;
     }
 
 
@@ -35,7 +52,7 @@
         position: absolute;
         width: 6rem;
         height: 6rem;
-        top: 1rem;
+        top: 2rem;
         right: 3rem;
         transition-duration: 0.5s;
         cursor: pointer;
@@ -45,12 +62,12 @@
     .menu-btn .icon-circle {
         transition-duration: 0.5s;
         position: absolute;
-        height: 5.5rem;
-        width: 5.5rem;
+        height: 4.5rem;
+        width: 4.5rem;
         top: 0;
         border-radius: 100%;
         background: transparent;
-        border: 4px solid black;
+        border: 3px solid black;
     }
 
     /* Hover effect for the circular icon */
@@ -62,36 +79,36 @@
     .menu-btn .icon {
         transition-duration: 0.5s;
         position: absolute;
-        height: 4px;
-        width: 3rem;
+        height: 3px;
+        width: 2.5rem;
         background-color: #212121;
         border-radius: 4px;
-        top: 2.6rem;
-        left: 1.2rem;
+        top: 2.1rem;
+        left: 1rem;
     }
 
     /* Styles for the top bar of the additional icon */
     .menu-btn .icon:before {
         transition-duration: 0.5s;
         position: absolute;
-        width: 3rem;
-        height: 4px;
+        width: 2.5rem;
+        height: 3px;
         background-color: #212121;
         border-radius: 4px;
         content: "";
-        top: -1rem;
+        top: -0.7rem;
     }
 
     /* Styles for the bottom bar of the additional icon */
     .menu-btn .icon:after {
         transition-duration: 0.5s;
         position: absolute;
-        width: 3rem;
-        height: 4px;
+        width: 2.5rem;
+        height: 3px;
         background-color: #212121;
         border-radius: 4px;
         content: "";
-        top: 1rem;
+        top: 0.7rem;
     }
 
     /* Styles for the open state of the menu icon */
@@ -101,11 +118,11 @@
     }
 
     .menu-btn.open .icon:before {
-        transform: rotateZ(-45deg) scaleX(1.25) translate(-0.6rem, 0.6rem);
+        transform: rotateZ(-45deg) scaleX(1.25) translate(-0.4rem, 0.5rem);
     }
 
     .menu-btn.open .icon:after {
-        transform: rotateZ(45deg) scaleX(1.25) translate(-0.6rem, -0.6rem);
+        transform: rotateZ(45deg) scaleX(1.25) translate(-0.4rem, -0.5rem);
     }
 
     /* Hover effect for the menu icon */
@@ -114,7 +131,15 @@
     }
 
     .menu-btn.open~#nav-links {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 50rem;
+        background-color: white;
+        z-index: 10;
+        position: absolute;
+        top: 15rem;
+        padding: 5rem;
+        border-radius: 1.2rem;
     }
 
     /* hamburger menu icon styling ends here */
