@@ -158,7 +158,7 @@
 
     .resp-nav {
         flex-direction: column;
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.1);
         z-index: 10;
         position: absolute;
         top: 30rem;
@@ -251,6 +251,14 @@
         width: 40rem;
     }
 
+    #nav-links li {
+        font-size: 2rem;
+    }
+
+    .menu-btn {
+        right: 0;
+    }
+
     .quote {
         font-size: 4rem;
     }
@@ -280,6 +288,10 @@
 
     .heading-2 {
         font-size: 3.5rem;
+    }
+
+    .card-main-content {
+        width: 32rem;
     }
 
     .main-category-btn {
@@ -348,11 +360,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-
-    .heading-2 {
-        font-size: 3rem;
-    }
-
 
     .card-child-content {
         font-size: 1.8rem;
