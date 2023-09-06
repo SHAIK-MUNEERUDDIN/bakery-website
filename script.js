@@ -1,12 +1,45 @@
+// js to initialize aos library
 AOS.init({
     duration: 1200,
 });
 
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+const menu = document.querySelector('.menu-btn');
+const page = document.getElementById('page-container');
+const navLinks = document.querySelectorAll('.nav-link');
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
 
-/* Function to stick the nav bar */
+
+//javascript to navigate on home section on reload
+window.onload = function () {
+    window.setTimeout(
+        function () { window.scrollTo(0, 0); },
+        10
+    );
+};
+
+
+// js to toggle hamburger menu, add blur effect to the page and to disable scroll when menu is opened
+function toggleMenu() {
+    menu.classList.toggle('open');
+    page.classList.toggle('blur');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+
+// js to set active state to the nav-link
+function clickSingleA(a) {
+    navLinks.forEach(link => link.classList.remove('active'));
+    toggleMenu();
+    a.classList.add('active');
+}
+
+// Add a click event listener to toggle the menu
+menu.addEventListener('click', toggleMenu);
+
+
+
+// js Function to stick the nav bar 
 function myFunction() {
     if (window.pageYOffset > sticky) {
         navbar.classList.add("sticky")
@@ -24,25 +57,6 @@ window.onscroll = function () { myFunction() };
 
 
 
-
-//javascript to navigate on home section on reload
-window.onload = function () {
-    window.setTimeout(
-        function () { window.scrollTo(0, 0); },
-        10
-    );
-};
-
-
-
-
-
-//javascript to make nav link active on click
-function clickSingleA(a) {
-    items = document.querySelectorAll('nav-link.active');
-    a.className = 'nav-link active';
-
-}
 
 
 // js to Highlight active section in navbar
@@ -65,28 +79,5 @@ $(document).ready(function () {
 
 
 
-// js to toggle hamburger menu, add blur effect to the page and to disable scroll when menu is opened
-const menu = document.querySelector('.menu-btn');
-const page = document.getElementById('page-container');
-
-function disableScroll() {
-    document.body.style.overflow = 'hidden';
-}
-
-function enableScroll() {
-    document.body.style.overflow = '';
-}
-
-// Add a click event listener to toggle the "open" class
-menu.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    if (menu.classList.contains('open')) {
-        page.classList.add('blur');
-        disableScroll();
-    } else {
-        page.classList.remove('blur');
-        enableScroll();
-    }
-});
 
 
