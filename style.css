@@ -360,6 +360,7 @@ html {
 .card-main img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .card-main:hover img {
@@ -369,10 +370,11 @@ html {
 .card-main-content {
     position: absolute;
     top: 55%;
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 35rem;
     height: 10rem;
+    text-align: center;
 }
 
 .heading-box {
