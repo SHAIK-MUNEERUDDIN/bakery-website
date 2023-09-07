@@ -3,13 +3,23 @@ AOS.init({
     duration: 1200,
 });
 
-
-const menu = document.querySelector('.menu-btn');
-const page = document.getElementById('page-container');
-const navUl = document.getElementById('nav-links')
-const navLinks = document.querySelectorAll('.nav-link');
+const body = document.body;
 const navBar = document.getElementById("navbar");
 const sticky = navBar.offsetTop;
+const navUl = document.getElementById('nav-links')
+const navLinks = document.querySelectorAll('.nav-link');
+const menu = document.querySelector('.menu-btn');
+const page = document.getElementById('page-container');
+
+
+// Wait for the entire page to load (including images and other resources)
+document.addEventListener("DOMContentLoaded", function () {
+    const preloader = document.querySelector(".preloader");
+    preloader.style.display = "none";
+    body.style.overflow = "visible";
+
+});
+
 
 
 //javascript to navigate on home section on reload
