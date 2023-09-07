@@ -13,12 +13,12 @@ const page = document.getElementById('page-container');
 
 
 // Wait for the entire page to load (including images and other resources)
-document.addEventListener("DOMContentLoaded", function () {
-    const preloader = document.querySelector(".preloader");
-    preloader.style.display = "none";
-    body.style.overflow = "visible";
-
+$(document).ready(function () {
+    const preloader = $(".preloader");
+    preloader.css("display", "none");
+    $("body").css("overflow", "visible");
 });
+
 
 
 
@@ -38,7 +38,7 @@ function toggleCheck() {
     navUl.style.display = isOpen ? 'flex' : '';
     navUl.classList.toggle('resp-nav', isOpen);
     page.classList.toggle('blur', isOpen);
-    document.body.style.overflow = isOpen ? 'hidden' : '';
+    document.body.style.overflow = isOpen ? 'hidden' : 'visible';
 }
 
 function toggleMenu() {
