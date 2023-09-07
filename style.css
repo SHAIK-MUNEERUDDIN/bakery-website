@@ -18,6 +18,62 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+}
+
+
+
+/* CSS for the preloader container */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* CSS for the loading animation */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #ff0054;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+.loading-message {
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.loading-message h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+
+/* Keyframes animation for spinning */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 #navbar {
     width: 100%;
     height: 8rem;
