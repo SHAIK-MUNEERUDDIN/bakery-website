@@ -13,11 +13,16 @@ const page = document.getElementById('page-container');
 
 
 // Wait for the entire page to load (including images and other resources)
-$(document).ready(function () {
-    const preloader = $(".preloader");
-    preloader.css("display", "none");
-    $("body").css("overflow", "visible");
-});
+
+function preloaderDelay() {
+    const preloader = document.querySelector(".preloader");
+    preloader.style.display = "none";
+    body.style.overflow = "visible";
+
+}
+setTimeout(preloaderDelay, 5000);
+
+
 
 
 
