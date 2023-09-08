@@ -80,13 +80,13 @@
         height: 6rem;
         top: 2rem;
         right: 3rem;
-        transition-duration: 0.5s;
+        transition-duration: 0.2s;
         cursor: pointer;
     }
 
     /* Styles for the circular icon */
     .menu-btn .icon-circle {
-        transition-duration: 0.5s;
+        transition-duration: 0.2s;
         position: absolute;
         height: 4.5rem;
         width: 4.5rem;
@@ -103,7 +103,7 @@
 
     /* Styles for the additional icon inside the circular icon */
     .menu-btn .icon {
-        transition-duration: 0.5s;
+        transition-duration: 0.2s;
         position: absolute;
         height: 3px;
         width: 2.5rem;
@@ -115,7 +115,7 @@
 
     /* Styles for the top bar of the additional icon */
     .menu-btn .icon:before {
-        transition-duration: 0.5s;
+        transition-duration: 0.2s;
         position: absolute;
         width: 2.5rem;
         height: 3px;
@@ -127,7 +127,7 @@
 
     /* Styles for the bottom bar of the additional icon */
     .menu-btn .icon:after {
-        transition-duration: 0.5s;
+        transition-duration: 0.2s;
         position: absolute;
         width: 2.5rem;
         height: 3px;
@@ -139,7 +139,7 @@
 
     /* Styles for the open state of the menu icon */
     .menu-btn.open .icon {
-        transition-duration: 0.5s;
+        transition-duration: 0.2s;
         background: transparent;
     }
 
@@ -264,14 +264,9 @@
     }
 
     #quote-box>span {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
-    .intro-text {
-        font-size: 1.8rem;
-        margin-top: 1rem;
-        margin: 1rem 0.5rem;
-    }
 
     .about-img {
         height: 60rem;
