@@ -879,36 +879,40 @@
             </div>
 
             <div class="wrapper">
-                <form action="#" method="POST">
+                <form name="order-form">
                     <div class="input-group">
                         <div class="input-box" data-aos="fade-right">
                             <label>Customer Name</label>
-                            <input type="text" placeholder="Enter Your Name" required class="order-ip-field">
+                            <input type="text" name="customer-name" placeholder="Enter Your Name" required
+                                class="order-ip-field">
                             <i class="fa fa-user"></i>
                         </div>
                         <div class="input-box" data-aos="fade-left">
                             <label>Customer Address</label>
-                            <input type="text" placeholder="Enter Your Address" required class="order-ip-field">
+                            <input type="text" name="customer-address" placeholder="Enter Your Address" required
+                                class="order-ip-field">
                             <i class="fa fa-location"></i>
                         </div>
                     </div>
                     <div class="input-group">
                         <div class="input-box" data-aos="fade-right">
                             <label>Customer Email</label>
-                            <input type="email" placeholder="Enter Your Email" required class="order-ip-field">
+                            <input type="email" name="customer-email" placeholder="Enter Your Email" required
+                                class="order-ip-field">
                             <i class="fa fa-envelope"></i>
                         </div>
                         <div class="input-box" data-aos="fade-left">
                             <label>Customer Number</label>
-                            <input type="tel" placeholder="Enter Your Mobile Number" required class="order-ip-field">
+                            <input type="tel" name="customer-number" placeholder="Enter Your Mobile Number" required
+                                class="order-ip-field">
                             <i class="fa fa-phone"></i>
                         </div>
                     </div>
                     <div class="input-group">
                         <div class="input-box summ" data-aos="fade-right">
                             <label>Order Summary</label>
-                            <textarea cols="40" rows="10" placeholder="Enter Your order Information"
-                                class="order-ip-field"></textarea>
+                            <textarea cols="40" rows="10" name="order-summary"
+                                placeholder="Enter Your order Information" class="order-ip-field"></textarea>
                         </div>
                     </div>
                     <div class="button-group">
