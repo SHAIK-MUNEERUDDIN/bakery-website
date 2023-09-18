@@ -102,5 +102,23 @@ $(document).ready(function () {
 
 
 
+// JS to record all the Data of the order Form to Google Sheet
+
+const orderForm = document.forms['order-form'];
+const allInputs = document.querySelectorAll(".order-ip-field");
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwB70Spa8zqtKpd5A1x-XgoI4a-bHFfrzw1qJV3FTZo84DMycb3e_fzwD4jOT2PA8l0/exec';
+
+orderForm.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(orderForm), mode: "no-cors" })
+        .then(response => alert("Thank you! your form is submitted successfully."))
+        .catch(error => console.error('Error!', error.message))
+    allInputs.forEach((input) => {
+        input.value = ''
+    })
+})
+
+
+
 
 
