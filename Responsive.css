@@ -231,6 +231,10 @@
         font-size: 56.25%;
     }
 
+    .loading-message h1{
+        font-size: 2rem;
+    }
+
     .menu-container {
         justify-content: center;
     }
@@ -335,8 +339,12 @@
         height: 35rem;
     }
 
+    .menu-img-box{
+        height: 25rem;
+    }
+
     .menu-content-box {
-        margin-top: 3.5rem;
+        margin-top: 1.5rem;
     }
 
     #Order {
