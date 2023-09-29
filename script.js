@@ -20,7 +20,7 @@ function preloaderDelay() {
     body.style.overflow = "visible";
 
 }
-setTimeout(preloaderDelay, 5000);
+setTimeout(preloaderDelay, 4000);
 
 
 
@@ -101,6 +101,32 @@ $(document).ready(function () {
 });
 
 
+//js to display order sumbission and newsletter message
+
+const orderMessage=document.getElementById("order-Submission-msg");
+const NewsLetterMessage=document.getElementById("new-letter-msg")
+
+function orderSubmission(){
+    orderMessage.style.display="flex";
+    setTimeout(function() {
+        orderMessage.style.display = "none";
+    }, 10000);
+}
+
+function NewsLetter(){
+    NewsLetterMessage.style.display="flex";
+    setTimeout(function() {
+        NewsLetterMessage.style.display = "none";
+    }, 10000);
+}
+
+function closeMsg(){
+    orderMessage.style.display = "none";
+    NewsLetterMessage.style.display="none";
+}
+
+
+
 
 // JS to record all the Data of the order Form to Google Sheet
 
@@ -111,11 +137,27 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwB70Spa8zqtKpd5A1x-X
 orderForm.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(orderForm), mode: "no-cors" })
-        .then(response => alert("Thank you! your form is submitted successfully."))
-        .catch(error => console.error('Error!', error.message))
+    .then(response =>orderSubmission())
+    .catch(error => alert("Unable to Submit the order, Please try again !"))
     allInputs.forEach((input) => {
         input.value = ''
     })
+})
+
+
+
+//js to record emails of the news letter subscription
+
+const newsLetterForm = document.forms['news-letter'];
+const newsLetterInput=document.getElementsByClassName("nl-input")[0];
+console.log(newsLetterInput)
+const script2URL = 'https://script.google.com/macros/s/AKfycbwidDwVnvDMSsS58_vBA1CTxOroGCt1SgD_AekuALGd00iBTVs2jgbVhB-oZpi-47SN/exec';
+newsLetterForm.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(script2URL, { method: 'POST', body: new FormData(newsLetterForm), mode: "no-cors" })
+        .then(response =>NewsLetter())
+        .catch(error => alert("Oops an unknown error has occured, Please try again !"))
+        newsLetterInput.value = "";  
 })
 
 
