@@ -1018,6 +1018,7 @@ textarea {
     background-color: rgb(147, 243, 155);
     position: fixed;
     top: 15%;
+    z-index: 999;
 }
 
 .fa-sharp{

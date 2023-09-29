@@ -243,6 +243,10 @@
         font-size: 1.7rem;
     }
 
+    #order-Submission-msg,#new-letter-msg{
+    font-size: 1.5rem;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
