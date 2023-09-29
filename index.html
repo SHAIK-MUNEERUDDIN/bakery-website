@@ -405,8 +405,8 @@
                     <p>Subscribe to Our Newsletter for a Sweet Insider Scoop !</p>
                 </div>
                 <div class="nl-form-box">
-                    <form class="nl-form" action="">
-                        <input type="email" placeholder="Enter Your Email" required>
+                    <form name="news-letter" class="nl-form" action="">
+                        <input class="nl-input" name="Email" type="email" placeholder="Enter Your Email" required>
                         <button class="subscribe-btn" type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -1080,6 +1080,19 @@
         </div>
 
         <!-- client review section ends here -->
+
+
+        <!-- Order-Submission-message -->
+        <div id="order-Submission-msg" data-aos="fade-down">
+            <p>Your Order Has Been Placed Successfully ! You Will Get a Confirmation Message by Our Team In a Moment.
+            </p><i onclick="closeMsg()" class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+
+        <!-- News letter subscription message-->>
+        <div id="new-letter-msg" data-aos="fade-down">
+            <p>Thank You For Subscribing our Newsletter !</p>
+            <i onclick="closeMsg()" class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
 
 
         <!-- footer section begins here -->
