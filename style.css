@@ -52,6 +52,7 @@ body {
 .loading-message {
     margin-top: 5rem;
     padding: 2rem;
+    display: inline-block;
 }
 
 .loading-message h1 {

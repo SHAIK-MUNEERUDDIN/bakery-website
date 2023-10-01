@@ -269,10 +269,12 @@
 
     .quote {
         font-size: 4rem;
+        text-shadow: none;
     }
 
     #quote-box>span {
         font-size: 7rem;
+        text-shadow: none;
     }
 
 

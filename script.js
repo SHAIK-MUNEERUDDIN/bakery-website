@@ -150,7 +150,6 @@ orderForm.addEventListener('submit', e => {
 
 const newsLetterForm = document.forms['news-letter'];
 const newsLetterInput=document.getElementsByClassName("nl-input")[0];
-console.log(newsLetterInput)
 const script2URL = 'https://script.google.com/macros/s/AKfycbwidDwVnvDMSsS58_vBA1CTxOroGCt1SgD_AekuALGd00iBTVs2jgbVhB-oZpi-47SN/exec';
 newsLetterForm.addEventListener('submit', e => {
     e.preventDefault()
