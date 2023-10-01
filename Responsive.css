@@ -251,6 +251,10 @@
 
 @media only screen and (max-width: 480px) {
 
+    .loading-message h1{
+        font-size: 2rem;
+    }
+
     #navbar {
         justify-content: flex-start;
     }

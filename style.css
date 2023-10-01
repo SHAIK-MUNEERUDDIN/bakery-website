@@ -168,6 +168,9 @@ body {
 }
 
 
+#page-container{
+    overflow: hidden;
+}
 
 #Home {
     width: 100%;
